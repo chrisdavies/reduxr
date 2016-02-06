@@ -1,0 +1,39 @@
+{
+  "name": "reduxr",
+  "version": "0.0.42",
+  "description": "React/Redux helpers and extensions developed at Ruzuku",
+  "directories": {},
+  "scripts": {
+    "test": "jasmine JASMINE_CONFIG_PATH=test/jasmine.json",
+    "build": "babel src --out-dir . --presets=stage-2,es2015 --plugins=transform-runtime"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrisdavies/reduxr"
+  },
+  "keywords": [
+    "redux",
+    "react",
+    "flux"
+  ],
+  "author": "Chris Davies <ferociousturtle@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisdavies/reduxr/issues"
+  },
+  "homepage": "https://github.com/chrisdavies/reduxr",
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-cli": "^6.4.5",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-2": "^6.3.13",
+    "deep-freeze": "0.0.1",
+    "faker": "^3.0.1",
+    "jasmine-es6": "0.0.9",
+    "proxyquire": "^1.7.4"
+  },
+  "dependencies": {
+    "alite": "^0.1.4",
+    "babel-plugin-transform-runtime": "^6.4.3"
+  }
+}
