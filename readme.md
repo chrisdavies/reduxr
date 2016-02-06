@@ -17,6 +17,18 @@ is taken directly from the [redux](https://github.com/rackt/redux) repo.
 
 [Here is a diff](https://github.com/chrisdavies/reduxr/commit/7b4b512dbc9533f91a14909438ed8ed3cea1bda8) showing the todos example before and after `reduxr` was integrated.
 
+Run the example as follows:
+
+```
+git clone git@github.com:chrisdavies/reduxr.git
+
+cd reduxr/examples/todos
+npm install
+npm start
+
+open http://localhost:3000/
+```
+
 ## Licence
 
 MIT
