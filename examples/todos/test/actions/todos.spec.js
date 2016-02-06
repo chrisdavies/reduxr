@@ -1,25 +1,28 @@
 import expect from 'expect'
-import * as actions from '../../actions'
+import actionCreators from '../../actions'
+import objActions from 'reduxr-obj-actions'
+
+const actions = objActions(o => o, actionCreators)
 
 describe('todo actions', () => {
-  it('addTodo should create ADD_TODO action', () => {
+  it('addTodo should create typed action', () => {
     expect(actions.addTodo('Use Redux')).toEqual({
-      type: 'ADD_TODO',
-      id: 0,
+      type: 'addTodo',
+      id: 1,
       text: 'Use Redux'
     })
   })
 
-  it('setVisibilityFilter should create SET_VISIBILITY_FILTER action', () => {
+  it('setVisibilityFilter should create typed action', () => {
     expect(actions.setVisibilityFilter('active')).toEqual({
-      type: 'SET_VISIBILITY_FILTER',
+      type: 'setVisibilityFilter',
       filter: 'active'
     })
   })
 
-  it('toogleTodo should create TOGGLE_TODO action', () => {
+  it('toogleTodo should create typed action', () => {
     expect(actions.toggleTodo(1)).toEqual({
-      type: 'TOGGLE_TODO',
+      type: 'toggleTodo',
       id: 1
     })
   })
