@@ -18,10 +18,14 @@
   "homepage": "http://rackt.github.io/redux",
   "dependencies": {
     "babel-polyfill": "^6.3.14",
+    "babel-preset-stage-2": "^6.3.13",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-redux": "^4.1.2",
-    "redux": "^3.1.2"
+    "redux": "^3.1.2",
+    "reduxr-obj-actions": "0.0.1",
+    "reduxr-obj-reducer": "0.0.11",
+    "reduxr-reducer-helpers": "0.0.11"
   },
   "devDependencies": {
     "babel-core": "^6.3.15",

@@ -1,10 +1,5 @@
-const visibilityFilter = (state = 'SHOW_ALL', action) => {
-  switch (action.type) {
-    case 'SET_VISIBILITY_FILTER':
-      return action.filter
-    default:
-      return state
-  }
-}
+import objReducer from 'reduxr-obj-reducer';
 
-export default visibilityFilter
+export default objReducer('SHOW_ALL', {
+  setVisibilityFilter: (_, {filter}) => filter
+})
